@@ -1,0 +1,22 @@
+
+params = {
+        'eta': 0.02,
+        'max_depth': 6,
+        'objective': 'multi:softprob',
+        'eval_metric': 'mlogloss',
+        'num_class': 9,
+        'seed': i,
+        'silent': True
+    }
+
+
+num_round = 1000
+early_stopping_rounds = 30
+
+dev_size = 0.30 # Try 100% training set...
+
+===========
+
+Dev score = 0.95 on many random dev splits...
+
+Submission score: 0.526

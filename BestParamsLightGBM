@@ -1,0 +1,26 @@
+
+param = {'boosting':'gbdt',
+         'num_leaves':15,
+         'num_trees':100,
+         'objective':'multiclass',
+         'learning_rate':0.02,
+         'num_class': 9,
+         'max_bin': 255,
+         'min_sum_hessian_in_leaf':0.001,
+         'bagging_fraction':1,
+         'lambda_l1':0,
+         'num_iterations':500
+         }
+
+param['metric'] = 'multi_logloss'
+
+num_round = 1000
+early_stopping_rounds = 30
+
+test_size=0.01 # Try 100% training set...
+
+===========
+
+Dev score = 0.80 on many random dev splits...
+
+Submission score: 0.49070
